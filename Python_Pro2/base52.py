@@ -1,0 +1,25 @@
+#일반 메서드
+def plus_one(x):
+    return x+1
+
+print(plus_one(1))
+print()
+
+#==============================
+#람다식 메서드
+plus_two=lambda x : x+2
+print(plus_two(1))
+print()
+
+#===============================
+#일반 메서드 + lambda
+def plus_list(x):
+    return x+1
+
+a=[1,2,3]
+
+print(list(map(plus_list,a)))
+
+#lambda식으로 변환
+print()
+print(list(map(lambda x:x+1,a)))
